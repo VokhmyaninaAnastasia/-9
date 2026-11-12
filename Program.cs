@@ -108,23 +108,14 @@ namespace работа_9
                     i++;
                 }
                 // Вывод массива
-                Console.Write("\nМассив : \n");
+                Console.WriteLine("\nМассив:");
                 i = 0;
                 while (i < arrayY.Length)
                 {
-                    Console.Write("Y [");
-                    Console.Write(i);
-                    Console.Write("]");
-                    Console.Write($"{arrayY[i]}; ");
+                    Console.WriteLine($"Y[{i}] = {Math.Round(arrayY[i], 2)}");
                     i++;
                 }
-                Console.Write("\nКоличество элементов в диапозоне [");
-                Console.Write(a);
-                Console.Write(";");
-                Console.Write(b);
-                Console.Write("):");
-                Console.Write(count);
-
+                Console.WriteLine($"\nКоличество элементов в диапазоне [{Math.Round(a, 2)}; {Math.Round(b, 2)}): {count}");
             }
             catch (FormatException)
             {
@@ -150,4 +141,3 @@ namespace работа_9
         }
     }
 }
-
